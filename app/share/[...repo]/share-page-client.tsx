@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ArrowRight, Github, Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import RepolystLogo from "@/components/icons/Repolyst-logo";
+import RepolystLogo from "@/components/icons/repolyst-logo";
 
 interface SharePageClientProps {
   repoFullName: string;
