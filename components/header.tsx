@@ -58,7 +58,7 @@ export const HeroHeader = () => {
 
               <Button asChild variant="outline">
                 <Link
-                  href="https://github.com/Devsethi3/repo-gist"
+                  href="https://github.com/devndesigner6/Repolyst"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
