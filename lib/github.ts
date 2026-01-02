@@ -17,7 +17,7 @@ interface GitHubTreeResponse {
 function getHeaders(): HeadersInit {
   const headers: HeadersInit = {
     Accept: "application/vnd.github.v3+json",
-    "User-Agent": "RepoGist-Analyzer",
+    "User-Agent": "Repolyst-Analyzer",
   };
   if (process.env.GITHUB_TOKEN) {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
@@ -284,3 +284,4 @@ export function createCompactTreeString(
   if (lines.length >= maxLines) lines.push("... (truncated)");
   return lines.join("\n");
 }
+

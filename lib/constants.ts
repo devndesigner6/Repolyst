@@ -1,4 +1,4 @@
-export const APP_NAME = "RepoGist";
+export const APP_NAME = "Repolyst";
 export const APP_DESCRIPTION = "AI-Powered GitHub Repository Analyzer";
 
 export const ANIMATION_DURATION = {

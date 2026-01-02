@@ -33,7 +33,7 @@ export function ShareModal({ open, onOpenChange, result }: ShareModalProps) {
 
   const handleCopyLink = useCallback(async () => {
     if (!shareData) return;
-    // Copies: https://repo-gist.vercel.app/share/owner/repo
+    // Copies: https://repolyst.vercel.app/share/owner/repo
     const success = await copyToClipboard(generateShareUrl(shareData));
     if (success) {
       setCopied(true);
@@ -47,7 +47,7 @@ export function ShareModal({ open, onOpenChange, result }: ShareModalProps) {
     try {
       const success = await downloadAsImage(
         cardRef.current,
-        `repogist-${shareData.repoName.toLowerCase().replace(/\s+/g, "-")}`
+        `Repolyst-${shareData.repoName.toLowerCase().replace(/\s+/g, "-")}`
       );
       if (success) {
         setDownloadSuccess(true);
@@ -93,3 +93,4 @@ export function ShareModal({ open, onOpenChange, result }: ShareModalProps) {
     <DesktopDialog {...sharedProps} />
   );
 }
+

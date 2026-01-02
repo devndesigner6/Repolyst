@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://repo-gist.vercel.app";
+const BASE_URL = "https://repolyst.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

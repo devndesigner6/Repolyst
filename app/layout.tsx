@@ -34,7 +34,7 @@ const instrumentSerif = Instrument_Serif({
   weight: ["400"],
 });
 
-const siteUrl = "https://repo-gist.vercel.app";
+const siteUrl = "https://repolyst.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -49,12 +49,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Basic Meta Tags
   title: {
-    default: "RepoGist - Analyze any public GitHub repository with AI",
-    template: "%s | RepoGist",
+    default: "Repolyst - Analyze any public GitHub repository with AI",
+    template: "%s | Repolyst",
   },
   description:
     "Analyze GitHub repositories with AI to uncover code quality issues, architecture insights, dependencies, and security vulnerabilities in seconds.",
-  applicationName: "RepoGist",
+  applicationName: "Repolyst",
   authors: [{ name: "Dev Prasad Sethi", url: "https://x.com/imsethidev" }],
   generator: "Next.js",
   keywords: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     "repository insights",
     "GitHub automation",
     "code health",
-    "RepoGist",
+    "Repolyst",
     "repo gist",
     "github repo analyzer",
   ],
@@ -125,8 +125,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "RepoGist",
-    title: "RepoGist - Analyze any public GitHub repository with AI",
+    siteName: "Repolyst",
+    title: "Repolyst - Analyze any public GitHub repository with AI",
     description:
       "Analyze any GitHub repository with AI. Get instant insights on code quality, architecture, dependencies, and security vulnerabilities.",
     images: [
@@ -134,7 +134,7 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "RepoGist - Analyze any public GitHub repository with AI",
+        alt: "Repolyst - Analyze any public GitHub repository with AI",
         type: "image/png",
       },
     ],
@@ -145,12 +145,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@imsethidev",
     creator: "@imsethidev",
-    title: "RepoGist - Analyze any public GitHub repository with AI",
+    title: "Repolyst - Analyze any public GitHub repository with AI",
     description:
       "Analyze any GitHub repository with AI. Get instant insights on code quality, architecture, and security.",
     images: {
       url: `${siteUrl}/og-image.png`,
-      alt: "RepoGist - Analyze any public GitHub repository with AI",
+      alt: "Repolyst - Analyze any public GitHub repository with AI",
     },
   },
 
@@ -163,7 +163,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "RepoGist",
+    title: "Repolyst",
   },
 
   // Format Detection
@@ -184,7 +184,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "RepoGist",
+  name: "Repolyst",
   description:
     "AI-powered GitHub repository analysis tool for developers. Get instant insights on code quality, architecture, dependencies, and security vulnerabilities.",
   url: siteUrl,
@@ -259,3 +259,4 @@ export default function RootLayout({
     </html>
   );
 }
+

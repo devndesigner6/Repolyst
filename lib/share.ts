@@ -79,7 +79,7 @@ function formatNumberShort(num: number): string {
   return num.toString();
 }
 
-const SITE_URL = "https://repo-gist.vercel.app";
+const SITE_URL = "https://repolyst.vercel.app";
 
 // Share link with repo path (for copy)
 export function generateShareUrl(data: ShareCardData): string {
@@ -91,7 +91,7 @@ export function generateTwitterShareUrl(data: ShareCardData): string {
   const scoreEmoji =
     data.overallScore >= 80 ? "🟢" : data.overallScore >= 60 ? "🟡" : "🔴";
 
-  const text = `🔍 Just analyzed ${data.repoFullName} using RepoGist!
+  const text = `🔍 Just analyzed ${data.repoFullName} using Repolyst!
 
 ${scoreEmoji} Score: ${data.overallScore}/100
 ⭐ Stars: ${formatNumberShort(data.stars)}
@@ -107,13 +107,13 @@ Analyze any GitHub repo instantly 👇`;
 
 // LinkedIn share
 export function generateLinkedInShareUrl(data: ShareCardData): string {
-  const text = `🔍 Just analyzed ${data.repoFullName} using RepoGist!
+  const text = `🔍 Just analyzed ${data.repoFullName} using Repolyst!
 
 📊 Score: ${data.overallScore}/100
 ⭐ Stars: ${formatNumberShort(data.stars)}
 💻 Language: ${data.language || "Multiple"}
 
-RepoGist is an AI-powered tool that analyzes any GitHub repository instantly. Try it out!
+Repolyst is an AI-powered tool that analyzes any GitHub repository instantly. Try it out!
 
 ${SITE_URL}`;
 
@@ -182,3 +182,4 @@ export function redirectToTwitter(data: ShareCardData): void {
 export function redirectToLinkedIn(data: ShareCardData): void {
   window.location.href = generateLinkedInShareUrl(data);
 }
+

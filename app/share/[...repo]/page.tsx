@@ -51,8 +51,8 @@ export async function generateMetadata({
 
   if (!repo || repo.length < 2) {
     return {
-      title: "Not Found | RepoGist",
-      description: "Repository not found on RepoGist.",
+      title: "Not Found | Repolyst",
+      description: "Repository not found on Repolyst.",
     };
   }
 
@@ -62,12 +62,12 @@ export async function generateMetadata({
 
   const github = await getGitHubData(owner, repoName);
 
-  const title = `${repoFullName} - Repository Analysis | RepoGist`;
+  const title = `${repoFullName} - Repository Analysis | Repolyst`;
 
   const description =
     github?.description && github.description.length >= 100
       ? github.description
-      : `Code analysis for ${repoFullName}. Get insights on code quality, architecture, security vulnerabilities, and actionable improvement suggestions on RepoGist.`;
+      : `Code analysis for ${repoFullName}. Get insights on code quality, architecture, security vulnerabilities, and actionable improvement suggestions on Repolyst.`;
 
   const ogImageUrl = `${BASE_URL}/api/og?repo=${encodeURIComponent(
     repoName
@@ -83,7 +83,7 @@ export async function generateMetadata({
       title,
       description,
       url: `${BASE_URL}/share/${repoFullName}`,
-      siteName: "RepoGist",
+      siteName: "Repolyst",
       type: "website",
       images: [
         {

@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="/public/icon.svg" alt="RepoGist Logo" width="100" height="100" />
+  <img src="/public/icon.svg" alt="Repolyst Logo" width="100" height="100" />
   
-  # RepoGist
+  # Repolyst
   
   ### Understand Any Codebase in Seconds
   
@@ -9,8 +9,8 @@
 
   <br />
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-black?style=for-the-badge)](https://repo-gist.vercel.app)
-[![GitHub Stars](https://img.shields.io/github/stars/Devsethi3/Repo-Gist?style=for-the-badge&logo=github&label=Stars&color=yellow)](https://github.com/Devsethi3/Repo-Gist)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-black?style=for-the-badge)](https://repolyst.vercel.app)
+[![GitHub Stars](https://img.shields.io/github/stars/Devsethi3/repolyst?style=for-the-badge&logo=github&label=Stars&color=yellow)](https://github.com/Devsethi3/repolyst)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
   <br />
@@ -25,7 +25,7 @@
 
   <br />
 
-  <img src="/public/og-image.png" alt="RepoGist Screenshot" width="800" style="border-radius: 12px;" />
+  <img src="/public/og-image.png" alt="Repolyst Screenshot" width="800" style="border-radius: 12px;" />
 
 </div>
 
@@ -35,9 +35,9 @@
 
 ## 📖 About
 
-**RepoGist** is an open-source tool that leverages AI to analyze GitHub repositories instantly. Whether you're evaluating a new library, onboarding to a codebase, or auditing your own project, RepoGist provides comprehensive insights in seconds.
+**Repolyst** is an open-source tool that leverages AI to analyze GitHub repositories instantly. Whether you're evaluating a new library, onboarding to a codebase, or auditing your own project, Repolyst provides comprehensive insights in seconds.
 
-### Why RepoGist?
+### Why Repolyst?
 
 - ⏱️ **Save Hours** - Understand any codebase in seconds, not hours
 - 🧠 **AI-Powered** - Intelligent analysis using advanced language models
@@ -99,8 +99,8 @@ npm install -g pnpm
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/Devsethi3/Repo-Gist.git
-cd Repo-Gist
+git clone https://github.com/Devsethi3/repolyst.git
+cd repolyst
 ```
 
 2. **Install dependencies**
@@ -166,7 +166,7 @@ CACHE_TTL=3600
 1. Log in to your GitHub account
 2. Go to **Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)**
 3. Click **"Generate new token (classic)"**
-4. Give it a descriptive name (e.g., "RepoGist Local Dev")
+4. Give it a descriptive name (e.g., "Repolyst Local Dev")
 5. Select the following scopes:
    - ✅ `repo` (Full control of private repositories)
    - ✅ `read:user` (Read user profile data)
@@ -180,7 +180,7 @@ CACHE_TTL=3600
 2. Sign up or log in with your account
 3. Navigate to **Settings** → **API Keys**
 4. Click **"Create new key"**
-5. Give it a name (e.g., "RepoGist")
+5. Give it a name (e.g., "Repolyst")
 6. Copy the generated key
 7. Paste it as `OPENROUTER_API_KEY` in your `.env.local`
 
@@ -252,7 +252,7 @@ CACHE_TTL=3600
 ## 📁 Project Structure
 
 ```
-repo-gist/
+repolyst/
 ├── app/                          # Next.js App Router
 │   ├── api/                      # API Routes
 │   │   └── analyze/              # Main analysis endpoint
@@ -498,7 +498,7 @@ Content-Type: application/json
 **cURL:**
 
 ```bash
-curl -X POST https://repo-gist.vercel.app/api/analyze \
+curl -X POST https://repolyst.vercel.app/api/analyze \
   -H "Content-Type: application/json" \
   -d '{"repoUrl": "https://github.com/vercel/next.js"}'
 ```
@@ -574,8 +574,8 @@ We welcome contributions from the community! Here's how you can help:
 
 ### Ways to Contribute
 
-- 🐛 **Report Bugs** - Found a bug? [Open an issue](https://github.com/Devsethi3/Repo-Gist/issues)
-- 💡 **Suggest Features** - Have an idea? [Start a discussion](https://github.com/Devsethi3/Repo-Gist/discussions)
+- 🐛 **Report Bugs** - Found a bug? [Open an issue](https://github.com/Devsethi3/repolyst/issues)
+- 💡 **Suggest Features** - Have an idea? [Start a discussion](https://github.com/Devsethi3/repolyst/discussions)
 - 📝 **Improve Docs** - Help us improve documentation
 - 🔧 **Submit PRs** - Fix bugs or add features
 
@@ -585,8 +585,8 @@ We welcome contributions from the community! Here's how you can help:
 
 ```bash
 # Click the "Fork" button on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/Repo-Gist.git
-cd Repo-Gist
+git clone https://github.com/YOUR_USERNAME/repolyst.git
+cd repolyst
 ```
 
 2. **Create a branch**
@@ -704,16 +704,16 @@ See the [LICENSE](LICENSE) file for details.
 ## ❓ FAQ
 
 <details>
-<summary><b>Is RepoGist free to use?</b></summary>
+<summary><b>Is Repolyst free to use?</b></summary>
 
-Yes! RepoGist is completely free and open source. You can use the hosted version at [repo-gist.vercel.app](https://repo-gist.vercel.app) or self-host it.
+Yes! Repolyst is completely free and open source. You can use the hosted version at [repolyst.vercel.app](https://repolyst.vercel.app) or self-host it.
 
 </details>
 
 <details>
 <summary><b>Is my code stored anywhere?</b></summary>
 
-No. RepoGist analyzes repositories in real-time and does not store any code. Only the analysis results are temporarily cached for performance.
+No. Repolyst analyzes repositories in real-time and does not store any code. Only the analysis results are temporarily cached for performance.
 
 </details>
 
@@ -727,14 +727,14 @@ Currently, only public repositories are supported. Private repository support is
 <details>
 <summary><b>How accurate is the analysis?</b></summary>
 
-RepoGist uses advanced AI models to analyze code patterns, but results should be considered as suggestions rather than absolute truths. Always use your own judgment.
+Repolyst uses advanced AI models to analyze code patterns, but results should be considered as suggestions rather than absolute truths. Always use your own judgment.
 
 </details>
 
 <details>
 <summary><b>What languages are supported?</b></summary>
 
-RepoGist can analyze repositories in any programming language. The AI model understands most popular languages including JavaScript, TypeScript, Python, Go, Rust, Java, and more.
+Repolyst can analyze repositories in any programming language. The AI model understands most popular languages including JavaScript, TypeScript, Python, Go, Rust, Java, and more.
 
 </details>
 
@@ -757,8 +757,8 @@ Special thanks to these amazing projects:
 
 ## 📬 Contact & Support
 
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/Devsethi3/Repo-Gist/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/Devsethi3/Repo-Gist/discussions)
+- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/Devsethi3/repolyst/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/Devsethi3/repolyst/discussions)
 - 🐦 **Twitter:** [@imsethidev](https://x.com/imsethidev)
 
 ---
@@ -783,16 +783,16 @@ Full Stack Developer • Open Source Enthusiast
 
 If you find this project useful, please consider:
 
-<a href="https://github.com/Devsethi3/Repo-Gist">
-  <img src="https://img.shields.io/github/stars/Devsethi3/Repo-Gist?style=for-the-badge&logo=github&label=Star%20on%20GitHub&color=yellow" />
+<a href="https://github.com/Devsethi3/repolyst">
+  <img src="https://img.shields.io/github/stars/Devsethi3/repolyst?style=for-the-badge&logo=github&label=Star%20on%20GitHub&color=yellow" />
 </a>
 
 <br /><br />
 
 **Share with others:**
 
-[![Share on Twitter](https://img.shields.io/badge/Share_on_Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/intent/tweet?text=Check%20out%20RepoGist%20-%20AI-powered%20GitHub%20repo%20analyzer!&url=https://repo-gist.vercel.app)
-[![Share on LinkedIn](https://img.shields.io/badge/Share_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://repo-gist.vercel.app)
+[![Share on Twitter](https://img.shields.io/badge/Share_on_Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/intent/tweet?text=Check%20out%20Repolyst%20-%20AI-powered%20GitHub%20repo%20analyzer!&url=https://repolyst.vercel.app)
+[![Share on LinkedIn](https://img.shields.io/badge/Share_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://repolyst.vercel.app)
 
 <br /><br />
 
@@ -800,6 +800,7 @@ If you find this project useful, please consider:
 
 Made with ❤️ and ☕ by [Dev Prasad Sethi](https://github.com/Devsethi3)
 
-<sub>© 2024 RepoGist. All rights reserved.</sub>
+<sub>© 2024 Repolyst. All rights reserved.</sub>
 
 </div>
+

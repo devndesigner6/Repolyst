@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { GithubIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import RepoGistLogo from "./icons/repogist-logo";
+import RepolystLogo from "./icons/repolyst-logo";
 
 export function Footer() {
   return (
@@ -19,10 +19,10 @@ export function Footer() {
               <Link href="/" className="flex items-center gap-2.5 group w-fit">
                 <div className="relative">
                   <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full group-hover:bg-primary/30 transition-colors" />
-                  <RepoGistLogo className="relative size-8 text-primary" />
+                  <RepolystLogo className="relative size-8 text-primary" />
                 </div>
                 <h2 className="instrument-serif text-2xl text-foreground">
-                  RepoGist
+                  Repolyst
                 </h2>
               </Link>
               <p className="text-sm text-muted-foreground jetbrains-mono leading-relaxed">
@@ -55,7 +55,7 @@ export function Footer() {
           <div className="border-t border-primary/10 py-6">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-xs text-muted-foreground jetbrains-mono text-center sm:text-left">
-                © {new Date().getFullYear()} RepoGist. All rights reserved.
+                (c) {new Date().getFullYear()} Repolyst. All rights reserved.
               </p>
               <div className="flex items-center gap-6 text-xs text-muted-foreground jetbrains-mono">
                 <Link
@@ -105,3 +105,4 @@ function SocialLink({
     </Link>
   );
 }
+
